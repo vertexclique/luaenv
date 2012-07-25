@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/loop/object
+END
+Wrapper.lua
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/49/trunk/luascript/loop/object/Wrapper.lua
+END
+Publisher.lua
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/49/trunk/luascript/loop/object/Publisher.lua
+END
+Exception.lua
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/49/trunk/luascript/loop/object/Exception.lua
+END

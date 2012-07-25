@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/49/trunk/luascript/pl
+END
+input.lua
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/49/trunk/luascript/pl/input.lua
+END
+utils.lua
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/49/trunk/luascript/pl/utils.lua
+END
+init.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/init.lua
+END
+array2d.lua
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/49/trunk/luascript/pl/array2d.lua
+END
+config.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/pl/config.lua
+END
+class.lua
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/49/trunk/luascript/pl/class.lua
+END
+strict.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/pl/strict.lua
+END
+data.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/data.lua
+END
+comprehension.lua
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/trunk/luascript/pl/comprehension.lua
+END
+list.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/list.lua
+END
+dir.lua
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/49/trunk/luascript/pl/dir.lua
+END
+lexer.lua
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/49/trunk/luascript/pl/lexer.lua
+END
+test.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/test.lua
+END
+file.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/file.lua
+END
+tablex.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/pl/tablex.lua
+END
+app.lua
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/49/trunk/luascript/pl/app.lua
+END
+permute.lua
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/49/trunk/luascript/pl/permute.lua
+END
+text.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/text.lua
+END
+pretty.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/pl/pretty.lua
+END
+seq.lua
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/49/trunk/luascript/pl/seq.lua
+END
+compat52.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/pl/compat52.lua
+END
+func.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/func.lua
+END
+operator.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/pl/operator.lua
+END
+luabalanced.lua
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/49/trunk/luascript/pl/luabalanced.lua
+END
+sip.lua
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/49/trunk/luascript/pl/sip.lua
+END
+lapp.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/lapp.lua
+END
+path.lua
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/49/trunk/luascript/pl/path.lua
+END
+classx.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/pl/classx.lua
+END
+stringx.lua
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/49/trunk/luascript/pl/stringx.lua
+END
+stringio.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/pl/stringio.lua
+END

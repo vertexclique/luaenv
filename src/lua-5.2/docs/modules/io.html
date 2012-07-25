@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Class_file">Class file</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/coroutine.html">coroutine</a></li>
+  <li><a href="../modules/debug.html">debug</a></li>
+  <li><a href="../modules/global.html">global</a></li>
+  <li><strong>io</strong></li>
+  <li><a href="../modules/math.html">math</a></li>
+  <li><a href="../modules/os.html">os</a></li>
+  <li><a href="../modules/package.html">package</a></li>
+  <li><a href="../modules/string.html">string</a></li>
+  <li><a href="../modules/table.html">table</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>io</code></h1>
+
+<p>Input and Output Facilities.</p>
+<p>
+ The I/O library provides function for file manipulation.
+ There are two different styles for file manipulation.
+ The first one uses implicit file descriptors;
+ that is, there are operations to set a default input file and a default output file,
+ and all input/output operations are over these default files. 
+ The second style uses explicit file descriptors.
+ When using implicit file descriptors, all operations are supplied by table io.
+ When using explicit file descriptors, the operation io.open returns a file descriptor
+ and then all operations are supplied as methods of the file descriptor.
+ The table io also provides three predefined file descriptors with their usual meanings from C: io.stdin, io.stdout, and io.stderr.
+ The I/O library never closes these files.
+ Unless otherwise stated, all I/O functions return nil on failure (plus an error message as a second result and a system-dependent error code as a third result)
+ and some value different from nil on success.</p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(file)</a></td>
+	<td class="summary">Equivalent to `file:close()`.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;()</a></td>
+	<td class="summary">Equivalent to `file:flush` over the default output file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(file)</a></td>
+	<td class="summary">When called with a file name, it opens the named file (in text mode),
+ and sets its handle as the default input file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(filename)</a></td>
+	<td class="summary">Opens the given file name in read mode and returns an iterator function
+ that, each time it is called, returns a new line from the file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(filename, mode)</a></td>
+	<td class="summary">This function opens a file, in the mode specified in the string `mode`.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(file)</a></td>
+	<td class="summary">Similar to `io.input`, but operates over the default output file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(prog, mode)</a></td>
+	<td class="summary">Starts program `prog` in a separated process and returns a file handle
+ that you can use to read data from this program (if `mode` is `"r"`,
+ the default) or to write data to this program (if `mode` is `"w"`).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(format)</a></td>
+	<td class="summary">Equivalent to `io.input():read`.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;()</a></td>
+	<td class="summary">Returns a handle for a temporary file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(obj)</a></td>
+	<td class="summary">Checks whether `obj` is a valid file handle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#parent">parent&nbsp;(content)</a></td>
+	<td class="summary">Equivalent to `io.output():write`.</td>
+	</tr>
+</table>
+<h2><a href="#Class_file">Class file</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self)</a></td>
+	<td class="summary">Closes `file`.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self)</a></td>
+	<td class="summary">Saves any written data to `file`.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self)</a></td>
+	<td class="summary">Returns an iterator function that, each time it is called, returns a
+ new line from the file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self, format)</a></td>
+	<td class="summary">Reads the file `file`, according to the given formats, which specify
+ what to read.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self, whence, offset)</a></td>
+	<td class="summary">Sets and gets the file position, measured from the beginning of the
+ file, to the position given by `offset` plus a base specified by the string
+ `whence`, as follows:
+   "set": base is position 0 (beginning of the file);
+   "cur": base is current position;
+   "end": base is end of file;
+ In case of success, function `seek` returns the final file position,
+ measured in bytes from the beginning of the file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self, mode, size)</a></td>
+	<td class="summary">Sets the buffering mode for an output file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#file:parent">file:parent&nbsp;(self, string)</a></td>
+	<td class="summary">Writes the value of each of its arguments to the `file`.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(file)</strong>
+    </dt>
+    <dd>
+    Equivalent to `file:close()`.  Without a `file`, closes the default
+ output file.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>file</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;()</strong>
+    </dt>
+    <dd>
+    Equivalent to `file:flush` over the default output file. 
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(file)</strong>
+    </dt>
+    <dd>
+    When called with a file name, it opens the named file (in text mode),
+ and sets its handle as the default input file.  When called with a file
+ handle, it simply sets this file handle as the default input file. When
+ called without parameters, it returns the current default input file.
+ In case of errors this function raises the error, instead of returning an
+ error code.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>file</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(filename)</strong>
+    </dt>
+    <dd>
+    Opens the given file name in read mode and returns an iterator function
+ that, each time it is called, returns a new line from the file.  Therefore,
+ the construction
+   for line in io.lines(filename) do *body* end
+ will iterate over all lines of the file. When the iterator function detects
+ the end of file, it returns nil (to finish the loop) and automatically
+ closes the file.
+ The call `io.lines()` (with no file name) is equivalent to
+ `io.input():lines()`; that is, it iterates over the lines of the default
+ input file. In this case it does not close the file when the loop ends.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>filename</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(filename, mode)</strong>
+    </dt>
+    <dd>
+    This function opens a file, in the mode specified in the string `mode`.  It
+ returns a new file handle, or, in case of errors, nil plus an error message.
+ The `mode` string can be any of the following:
+   "r": read mode (the default);
+   "w": write mode;
+   "a": append mode;
+   "r+": update mode, all previous data is preserved;
+   "w+": update mode, all previous data is erased;
+   "a+": append update mode, previous data is preserved, writing is only
+   allowed at the end of file.
+ The `mode` string can also have a '`b`' at the end, which is needed in
+ some systems to open the file in binary mode. This string is exactly what
+ is used in the standard C function `fopen`.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>filename</em></code>: </li>
+       <li><code><em>mode</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        #file
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(file)</strong>
+    </dt>
+    <dd>
+    Similar to `io.input`, but operates over the default output file. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>file</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(prog, mode)</strong>
+    </dt>
+    <dd>
+    Starts program `prog` in a separated process and returns a file handle
+ that you can use to read data from this program (if `mode` is `"r"`,
+ the default) or to write data to this program (if `mode` is `"w"`). 
+ This function is system dependent and is not available on all platforms.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>prog</em></code>: </li>
+       <li><code><em>mode</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        #file
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(format)</strong>
+    </dt>
+    <dd>
+    Equivalent to `io.input():read`. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>format</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;()</strong>
+    </dt>
+    <dd>
+    Returns a handle for a temporary file.  This file is opened in update
+ mode and it is automatically removed when the program ends.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        #file
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(obj)</strong>
+    </dt>
+    <dd>
+    Checks whether `obj` is a valid file handle.  Returns the string `"file"`
+ if `obj` is an open file handle, `"closed file"` if `obj` is a closed file
+ handle, or nil if `obj` is not a file handle.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>obj</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "parent"></a>
+    <strong>parent&nbsp;(content)</strong>
+    </dt>
+    <dd>
+    Equivalent to `io.output():write`. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>content</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_file"></a>Class file</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self)</strong>
+    </dt>
+    <dd>
+    Closes `file`.  Note that files are automatically closed when their
+ handles are garbage collected, but that takes an unpredictable amount of
+ time to happen.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self)</strong>
+    </dt>
+    <dd>
+    Saves any written data to `file`. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self)</strong>
+    </dt>
+    <dd>
+    Returns an iterator function that, each time it is called, returns a
+ new line from the file.  Therefore, the construction
+   for line in file:lines() do *body* end
+ will iterate over all lines of the file. (Unlike `io.lines`, this function
+ does not close the file when the loop ends.)
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self, format)</strong>
+    </dt>
+    <dd>
+    Reads the file `file`, according to the given formats, which specify
+ what to read.  For each format, the function returns a string (or a number)
+ with the characters read, or nil if it cannot read data with the specified
+ format. When called without formats, it uses a default format that reads
+ the entire next line (see below).
+ The available formats are
+   "*n": reads a number; this is the only format that returns a number
+   instead of a string.
+   "*a": reads the whole file, starting at the current position. On end of
+   file, it returns the empty string.
+   "*l": reads the next line (skipping the end of line), returning nil on
+   end of file. This is the default format.
+   *number*: reads a string with up to this number of characters, returning
+   nil on end of file. If number is zero, it reads nothing and returns an
+   empty string, or nil on end of file.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+       <li><code><em>format</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self, whence, offset)</strong>
+    </dt>
+    <dd>
+    Sets and gets the file position, measured from the beginning of the
+ file, to the position given by `offset` plus a base specified by the string
+ `whence`, as follows:
+   "set": base is position 0 (beginning of the file);
+   "cur": base is current position;
+   "end": base is end of file;
+ In case of success, function `seek` returns the final file position,
+ measured in bytes from the beginning of the file.  If this function fails,
+ it returns nil, plus a string describing the error.
+ The default value for `whence` is `"cur"`, and for `offset` is 0. Therefore,
+ the call `file:seek()` returns the current file position, without changing
+ it; the call `file:seek("set")` sets the position to the beginning of the
+ file (and returns 0); and the call `file:seek("end")` sets the position
+ to the end of the file, and returns its size.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+       <li><code><em>whence</em></code>: </li>
+       <li><code><em>offset</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self, mode, size)</strong>
+    </dt>
+    <dd>
+    Sets the buffering mode for an output file.  There are three available
+ modes:
+
+  * "no": no buffering; the result of any output operation appears immediately.
+  * "full": full buffering; output operation is performed only when the
+   buffer is full (or when you explicitly `flush` the file (see `io.flush`)).
+  * "line": line buffering; output is buffered until a newline is output or
+   there is any input from some special files (such as a terminal device).
+ For the last two cases, `size` specifies the size of the buffer, in
+ bytes. The default is an appropriate size.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+       <li><code><em>mode</em></code>: </li>
+       <li><code><em>size</em></code>: </li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "file:parent"></a>
+    <strong>file:parent&nbsp;(self, string)</strong>
+    </dt>
+    <dd>
+    Writes the value of each of its arguments to the `file`.  The arguments
+ must be strings or numbers. To write other values, use `tostring` or
+ `string.format` before `write`.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>self</em></code>: </li>
+       <li><code><em>string</em></code>:  content</li>
+    </ul>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

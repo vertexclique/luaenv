@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="default.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+		<ul>
+				<li>coroutine</li>
+				<li><a href="debug.html">debug</a></li>
+				<li><a href="global.html">global</a></li>
+				<li><a href="io.html">io</a></li>
+				<li><a href="math.html">math</a></li>
+				<li><a href="os.html">os</a></li>
+				<li><a href="package.html">package</a></li>
+				<li><a href="string.html">string</a></li>
+				<li><a href="table.html">table</a></li>
+				<li><a href="index.html">index</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>coroutine</code></h1>
+    Coroutine Manipulation.
+   <br/>The operations related to coroutines comprise a sub-library of the basic library 
+ and come inside the table coroutine.
+ See <a href="http://www.lua.org/manual/5.1/manual.html#2.11">§2.11</a> for a general description of coroutines.
+			<a id="coroutine" />
+			<h2>Type <code>coroutine</code></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.running">coroutine.running()</a></td>
+		<td class="summary"> Returns the running coroutine, or nil when called by the main thread.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.yield">coroutine.yield()</a></td>
+		<td class="summary"> Suspends the execution of the calling coroutine.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.status">coroutine.status(co)</a></td>
+		<td class="summary"> Returns the status of coroutine <code>co</code>, as a string: <code>"running"</code>, if
+ the coroutine is running (that is, it called <code>status</code>); <code>"suspended"</code>, if
+ the coroutine is suspended in a call to <code>yield</code>, or if it has not started
+ running yet; <code>"normal"</code> if the coroutine is active but not running (that
+ is, it has resumed another coroutine); and <code>"dead"</code> if the coroutine has
+ finished its body function, or if it has stopped with an error.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.wrap">coroutine.wrap(f)</a></td>
+		<td class="summary"> Creates a new coroutine, with body <code>f</code>.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.create">coroutine.create(f)</a></td>
+		<td class="summary"> Creates a new coroutine, with body <code>f</code>.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="#coroutine.resume">coroutine.resume(co, val1)</a></td>
+		<td class="summary"> Starts or continues the execution of coroutine <code>co</code>.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>coroutine</code></h2>
+			<a id ="anchor(_recordtypedef)"></a>
+	<h3>Field(s)</h3>
+		<a id="coroutine.running" />
+<dl class="function">
+<dt>
+<strong>coroutine.running()</strong>
+</dt>
+<dd>
+	 Returns the running coroutine, or nil when called by the main thread.
+	
+
+
+</dd>
+</dl>
+		<a id="coroutine.yield" />
+<dl class="function">
+<dt>
+<strong>coroutine.yield()</strong>
+</dt>
+<dd>
+	 Suspends the execution of the calling coroutine.
+	The coroutine cannot
+ be running a C function, a metamethod, or an iterator. Any arguments to
+ <code>yield</code> are passed as extra results to <code>resume</code>.
+</dd>
+</dl>
+		<a id="coroutine.status" />
+<dl class="function">
+<dt>
+<strong>coroutine.status(co)</strong>
+</dt>
+<dd>
+	 Returns the status of coroutine <code>co</code>, as a string: <code>"running"</code>, if
+ the coroutine is running (that is, it called <code>status</code>); <code>"suspended"</code>, if
+ the coroutine is suspended in a call to <code>yield</code>, or if it has not started
+ running yet; <code>"normal"</code> if the coroutine is active but not running (that
+ is, it has resumed another coroutine); and <code>"dead"</code> if the coroutine has
+ finished its body function, or if it has stopped with an error.
+	
+
+
+		<h3>Parameter</h3>
+		<ul>
+				<li>
+				<code><em>
+				co  
+				</em></code>:
+					
+
+
+				</li>
+		</ul>
+</dd>
+</dl>
+		<a id="coroutine.wrap" />
+<dl class="function">
+<dt>
+<strong>coroutine.wrap(f)</strong>
+</dt>
+<dd>
+	 Creates a new coroutine, with body <code>f</code>.
+	<code>f</code> must be a Lua
+ function. Returns a function that resumes the coroutine each time it is
+ called. Any arguments passed to the function behave as the extra arguments to
+ <code>resume</code>. Returns the same values returned by <code>resume</code>, except the first
+ boolean. In case of error, propagates the error.
+		<h3>Parameter</h3>
+		<ul>
+				<li>
+				<code><em>
+				f  
+				</em></code>:
+					
+
+
+				</li>
+		</ul>
+</dd>
+</dl>
+		<a id="coroutine.create" />
+<dl class="function">
+<dt>
+<strong>coroutine.create(f)</strong>
+</dt>
+<dd>
+	 Creates a new coroutine, with body <code>f</code>.
+	<code>f</code> must be a Lua
+ function. Returns this new coroutine, an object with type <code>"thread"</code>.
+		<h3>Parameter</h3>
+		<ul>
+				<li>
+				<code><em>
+				f  
+				</em></code>:
+					
+
+
+				</li>
+		</ul>
+</dd>
+</dl>
+		<a id="coroutine.resume" />
+<dl class="function">
+<dt>
+<strong>coroutine.resume(co, val1)</strong>
+</dt>
+<dd>
+	 Starts or continues the execution of coroutine <code>co</code>.
+	The first time
+ you resume a coroutine, it starts running its body. The values <code>val1</code>,
+ ... are passed as the arguments to the body function. If the coroutine
+ has yielded, <code>resume</code> restarts it; the values <code>val1</code>, ... are passed
+ as the results from the yield.
+ If the coroutine runs without any errors, <code>resume</code> returns true plus any
+ values passed to <code>yield</code> (if the coroutine yields) or any values returned
+ by the body function (if the coroutine terminates). If there is any error,
+ <code>resume</code> returns false plus the error message.
+		<h3>Parameters</h3>
+		<ul>
+				<li>
+				<code><em>
+				co  
+				</em></code>:
+					
+
+
+				</li>
+				<li>
+				<code><em>
+				val1  
+				</em></code>:
+					
+
+
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

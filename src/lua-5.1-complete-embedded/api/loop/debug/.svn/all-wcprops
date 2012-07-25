@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/49/trunk/luascript/loop/debug
+END
+Viewer.lua
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/49/trunk/luascript/loop/debug/Viewer.lua
+END
+Matcher.lua
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/49/trunk/luascript/loop/debug/Matcher.lua
+END
+Verbose.lua
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/49/trunk/luascript/loop/debug/Verbose.lua
+END
+Inspector.lua
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/49/trunk/luascript/loop/debug/Inspector.lua
+END

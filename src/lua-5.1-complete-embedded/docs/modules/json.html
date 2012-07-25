@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/CLRPackage.html">CLRPackage</a></li>
+  <li><a href="../modules/alien.html">alien</a></li>
+  <li><a href="../modules/copas.html">copas</a></li>
+  <li><a href="../modules/coroutine.html">coroutine</a></li>
+  <li><a href="../modules/coxpcall.html">coxpcall</a></li>
+  <li><a href="../modules/debug.html">debug</a></li>
+  <li><a href="../modules/global.html">global</a></li>
+  <li><a href="../modules/io.html">io</a></li>
+  <li><strong>json</strong></li>
+  <li><a href="../modules/lar.html">lar</a></li>
+  <li><a href="../modules/logging.html">logging</a></li>
+  <li><a href="../modules/logging.html">logging</a></li>
+  <li><a href="../modules/logging.html">logging</a></li>
+  <li><a href="../modules/logging.console.html">logging.console</a></li>
+  <li><a href="../modules/logging.email.html">logging.email</a></li>
+  <li><a href="../modules/logging.file.html">logging.file</a></li>
+  <li><a href="../modules/logging.socket.html">logging.socket</a></li>
+  <li><a href="../modules/logging.sql.html">logging.sql</a></li>
+  <li><a href="../modules/loop.base.html">loop.base</a></li>
+  <li><a href="../modules/loop.cached.html">loop.cached</a></li>
+  <li><a href="../modules/loop.collection.MapWithArrayOfKeys.html">loop.collection.MapWithArrayOfKeys</a></li>
+  <li><a href="../modules/loop.collection.ObjectCache.html">loop.collection.ObjectCache</a></li>
+  <li><a href="../modules/loop.collection.OrderedSet.html">loop.collection.OrderedSet</a></li>
+  <li><a href="../modules/loop.collection.PriorityQueue.html">loop.collection.PriorityQueue</a></li>
+  <li><a href="../modules/loop.collection.UnorderedArray.html">loop.collection.UnorderedArray</a></li>
+  <li><a href="../modules/loop.collection.UnorderedArraySet.html">loop.collection.UnorderedArraySet</a></li>
+  <li><a href="../modules/loop.compiler.Arguments.html">loop.compiler.Arguments</a></li>
+  <li><a href="../modules/loop.compiler.Conditional.html">loop.compiler.Conditional</a></li>
+  <li><a href="../modules/loop.compiler.Expression.html">loop.compiler.Expression</a></li>
+  <li><a href="../modules/loop.component.base.html">loop.component.base</a></li>
+  <li><a href="../modules/loop.component.contained.html">loop.component.contained</a></li>
+  <li><a href="../modules/loop.component.dynamic.html">loop.component.dynamic</a></li>
+  <li><a href="../modules/loop.component.intercepted.html">loop.component.intercepted</a></li>
+  <li><a href="../modules/loop.component.wrapped.html">loop.component.wrapped</a></li>
+  <li><a href="../modules/loop.debug.Inspector.html">loop.debug.Inspector</a></li>
+  <li><a href="../modules/loop.debug.Matcher.html">loop.debug.Matcher</a></li>
+  <li><a href="../modules/loop.debug.Verbose.html">loop.debug.Verbose</a></li>
+  <li><a href="../modules/loop.debug.Viewer.html">loop.debug.Viewer</a></li>
+  <li><a href="../modules/loop.multiple.html">loop.multiple</a></li>
+  <li><a href="../modules/loop.object.Exception.html">loop.object.Exception</a></li>
+  <li><a href="../modules/loop.object.Publisher.html">loop.object.Publisher</a></li>
+  <li><a href="../modules/loop.object.Wrapper.html">loop.object.Wrapper</a></li>
+  <li><a href="../modules/loop.scoped.html">loop.scoped</a></li>
+  <li><a href="../modules/loop.serial.FileStream.html">loop.serial.FileStream</a></li>
+  <li><a href="../modules/loop.serial.Serializer.html">loop.serial.Serializer</a></li>
+  <li><a href="../modules/loop.serial.SocketStream.html">loop.serial.SocketStream</a></li>
+  <li><a href="../modules/loop.serial.StringStream.html">loop.serial.StringStream</a></li>
+  <li><a href="../modules/loop.simple.html">loop.simple</a></li>
+  <li><a href="../modules/loop.table.html">loop.table</a></li>
+  <li><a href="../modules/loop.thread.CoSocket.html">loop.thread.CoSocket</a></li>
+  <li><a href="../modules/loop.thread.IOScheduler.html">loop.thread.IOScheduler</a></li>
+  <li><a href="../modules/loop.thread.Scheduler.html">loop.thread.Scheduler</a></li>
+  <li><a href="../modules/loop.thread.SocketScheduler.html">loop.thread.SocketScheduler</a></li>
+  <li><a href="../modules/loop.thread.Timer.html">loop.thread.Timer</a></li>
+  <li><a href="../modules/ltn12.html">ltn12</a></li>
+  <li><a href="../modules/luadoc.html">luadoc</a></li>
+  <li><a href="../modules/luadoc.config.html">luadoc.config</a></li>
+  <li><a href="../modules/luadoc.doclet.debug.html">luadoc.doclet.debug</a></li>
+  <li><a href="../modules/luadoc.doclet.formatter.html">luadoc.doclet.formatter</a></li>
+  <li><a href="../modules/luadoc.doclet.html.html">luadoc.doclet.html</a></li>
+  <li><a href="../modules/luadoc.doclet.raw.html">luadoc.doclet.raw</a></li>
+  <li><a href="../modules/luadoc.lp.html">luadoc.lp</a></li>
+  <li><a href="../modules/luadoc.taglet.standard.html">luadoc.taglet.standard</a></li>
+  <li><a href="../modules/luadoc.taglet.standard.tags.html">luadoc.taglet.standard.tags</a></li>
+  <li><a href="../modules/luadoc.util.html">luadoc.util</a></li>
+  <li><a href="../modules/luadoc_start.html">luadoc_start</a></li>
+  <li><a href="../modules/luasql.ado.html">luasql.ado</a></li>
+  <li><a href="../modules/math.html">math</a></li>
+  <li><a href="../modules/md5.html">md5</a></li>
+  <li><a href="../modules/mime.html">mime</a></li>
+  <li><a href="../modules/mkcalendar.html">mkcalendar</a></li>
+  <li><a href="../modules/mkisocal.html">mkisocal</a></li>
+  <li><a href="../modules/os.html">os</a></li>
+  <li><a href="../modules/package.html">package</a></li>
+  <li><a href="../modules/pl.app.html">pl.app</a></li>
+  <li><a href="../modules/pl.array2d.html">pl.array2d</a></li>
+  <li><a href="../modules/pl.class.html">pl.class</a></li>
+  <li><a href="../modules/pl.classx.html">pl.classx</a></li>
+  <li><a href="../modules/pl.comprehension.html">pl.comprehension</a></li>
+  <li><a href="../modules/pl.config.html">pl.config</a></li>
+  <li><a href="../modules/pl.data.html">pl.data</a></li>
+  <li><a href="../modules/pl.dir.html">pl.dir</a></li>
+  <li><a href="../modules/pl.file.html">pl.file</a></li>
+  <li><a href="../modules/pl.func.html">pl.func</a></li>
+  <li><a href="../modules/pl.input.html">pl.input</a></li>
+  <li><a href="../modules/pl.lexer.html">pl.lexer</a></li>
+  <li><a href="../modules/pl.list.html">pl.list</a></li>
+  <li><a href="../modules/pl.operator.html">pl.operator</a></li>
+  <li><a href="../modules/pl.path.html">pl.path</a></li>
+  <li><a href="../modules/pl.permute.html">pl.permute</a></li>
+  <li><a href="../modules/pl.pretty.html">pl.pretty</a></li>
+  <li><a href="../modules/pl.seq.html">pl.seq</a></li>
+  <li><a href="../modules/pl.sip.html">pl.sip</a></li>
+  <li><a href="../modules/pl.strict.html">pl.strict</a></li>
+  <li><a href="../modules/pl.stringio.html">pl.stringio</a></li>
+  <li><a href="../modules/pl.stringx.html">pl.stringx</a></li>
+  <li><a href="../modules/pl.tablex.html">pl.tablex</a></li>
+  <li><a href="../modules/pl.test.html">pl.test</a></li>
+  <li><a href="../modules/pl.text.html">pl.text</a></li>
+  <li><a href="../modules/pl.utils.html">pl.utils</a></li>
+  <li><a href="../modules/serialize.html">serialize</a></li>
+  <li><a href="../modules/socket.html">socket</a></li>
+  <li><a href="../modules/socket.ftp.html">socket.ftp</a></li>
+  <li><a href="../modules/socket.http.html">socket.http</a></li>
+  <li><a href="../modules/socket.smtp.html">socket.smtp</a></li>
+  <li><a href="../modules/socket.tp.html">socket.tp</a></li>
+  <li><a href="../modules/socket.url.html">socket.url</a></li>
+  <li><a href="../modules/stable.html">stable</a></li>
+  <li><a href="../modules/string.html">string</a></li>
+  <li><a href="../modules/table.html">table</a></li>
+  <li><a href="../modules/tar.html">tar</a></li>
+  <li><a href="../modules/xml.html">xml</a></li>
+</ul>
+<h2>Scripts</h2>
+<ul>
+  <li><a href="../scripts/Lua.html">Lua</a></li>
+  <li><a href="../scripts/Lua.html">Lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>json</code></h1>
+
+<p>JSON4Lua: JSON encoding / decoding support for the Lua language.</p>
+<p>
+ json Module.
+ Author: Craig Mason-Jones
+ Homepage: http://json.luaforge.net/
+ Version: 0.9.20
+ This module is released under the The GNU General Public License (GPL).
+ Please see LICENCE.txt for details.
+
+ USAGE:
+ This module exposes two functions:
+   encode(o)
+     Returns the table / string / boolean / number / nil / json.null value as a JSON-encoded string.
+   decode(json_string)
+     Returns a Lua object populated with the data encoded in the JSON string json_string.
+
+ REQUIREMENTS:
+   compat-5.1 if using Lua 5.0
+
+ CHANGELOG
+   0.9.20 Introduction of local Lua functions for private functions (removed _ function prefix). 
+          Fixed Lua 5.1 compatibility issues.
+   		Introduced json.null to have null values in associative arrays.
+          encode() performance improvement (more than 50%) through table.concat rather than ..
+          Introduced decode ability to ignore /**/ comments in the JSON string.
+   0.9.10 Fix to array encoding / decoding to correctly manage nil/null values in arrays.
+
+ Kamil Kapron NOTES:
+		In function decode_scanConstant() I've added a constant "NULL" - I'm using it in the LuaTwitter module
+</p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#encode">encode&nbsp;(v)</a></td>
+	<td class="summary">PUBLIC FUNCTIONS
+
+ Encodes an arbitrary Lua object / variable.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode">decode&nbsp;(s, startPos)</a></td>
+	<td class="summary">Decodes a JSON string and returns the decoded value as a Lua data structure / value.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#null">null&nbsp;()</a></td>
+	<td class="summary">The null function allows one to specify a null value in an associative array (which is otherwise
+ discarded if you set the value with 'nil' in Lua.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanArray">decode_scanArray&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans an array from JSON into a Lua object
+ startPos begins at the start of the array.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanComment">decode_scanComment&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans a comment and discards the comment.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanConstant">decode_scanConstant&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans for given constants: true, false or null
+ Returns the appropriate Lua type, and the position of the next character to read.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanNumber">decode_scanNumber&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans a number from the JSON encoded string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanObject">decode_scanObject&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans a JSON object into a Lua object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanString">decode_scanString&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans a JSON string from the opening inverted comma or single quote to the
+ end of the string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#decode_scanWhitespace">decode_scanWhitespace&nbsp;(s, startPos)</a></td>
+	<td class="summary">Scans a JSON string skipping all whitespace from the current start position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#encodeString">encodeString&nbsp;(s)</a></td>
+	<td class="summary">Encodes a string to be JSON-compatible.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#isEncodable">isEncodable&nbsp;(o)</a></td>
+	<td class="summary">Determines whether the given Lua object / table / variable can be JSON encoded.</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#math">math</a></td>
+	<td class="summary">Imports and dependencies</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "encode"></a>
+    <strong>encode&nbsp;(v)</strong>
+    </dt>
+    <dd>
+    PUBLIC FUNCTIONS
+
+ Encodes an arbitrary Lua object / variable. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>v</em></code>:  The Lua object / variable to be JSON encoded.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        String containing the JSON encoding in internal Lua string format (i.e. not unicode)
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode"></a>
+    <strong>decode&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Decodes a JSON string and returns the decoded value as a Lua data structure / value. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string to scan.</li>
+       <li><code><em>startPos</em></code>: ] Optional starting position where the JSON string is located. Defaults to 1.</li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "null"></a>
+    <strong>null&nbsp;()</strong>
+    </dt>
+    <dd>
+    The null function allows one to specify a null value in an associative array (which is otherwise
+ discarded if you set the value with 'nil' in Lua.  Simply set t = { first=json.null }
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanArray"></a>
+    <strong>decode_scanArray&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans an array from JSON into a Lua object
+ startPos begins at the start of the array. 
+ Returns the array and the next starting position
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned.</li>
+       <li><code><em>startPos</em></code>:  The starting position for the scan.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        table, int The scanned array as a table, and the position of the next character to scan.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanComment"></a>
+    <strong>decode_scanComment&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans a comment and discards the comment. 
+ Returns the position of the next character following the comment.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  s The JSON string to scan.</li>
+       <li><code><em>startPos</em></code>:  startPos The starting position of the comment</li>
+    </ul>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanConstant"></a>
+    <strong>decode_scanConstant&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans for given constants: true, false or null
+ Returns the appropriate Lua type, and the position of the next character to read. 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned.</li>
+       <li><code><em>startPos</em></code>:  The position in the string at which to start scanning.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        object, int The object (true, false or nil) and the position at which the next character should be 
+ scanned.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanNumber"></a>
+    <strong>decode_scanNumber&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans a number from the JSON encoded string. 
+ (in fact, also is able to scan numeric +- eqns, which is not
+ in the JSON spec.)
+ Returns the number, and the position of the next character
+ after the number.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned.</li>
+       <li><code><em>startPos</em></code>:  The position at which to start scanning.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        number, int The extracted number and the position of the next character to scan.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanObject"></a>
+    <strong>decode_scanObject&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans a JSON object into a Lua object. 
+ startPos begins at the start of the object.
+ Returns the object and the next starting position.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned.</li>
+       <li><code><em>startPos</em></code>:  The starting position of the scan.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        table, int The scanned object as a table and the position of the next character to scan.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanString"></a>
+    <strong>decode_scanString&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans a JSON string from the opening inverted comma or single quote to the
+ end of the string. 
+ Returns the string extracted as a Lua string,
+ and the position of the next non-string character
+ (after the closing inverted comma or single quote).
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned.</li>
+       <li><code><em>startPos</em></code>:  The starting position of the scan.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        string, int The extracted string as a Lua string, and the next character to parse.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "decode_scanWhitespace"></a>
+    <strong>decode_scanWhitespace&nbsp;(s, startPos)</strong>
+    </dt>
+    <dd>
+    Scans a JSON string skipping all whitespace from the current start position. 
+ Returns the position of the first non-whitespace character, or nil if the whole end of string is reached.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string being scanned</li>
+       <li><code><em>startPos</em></code>:  The starting position where we should begin removing whitespace.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        int The first position where non-whitespace was encountered, or string.len(s)+1 if the end of string
+ was reached.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "encodeString"></a>
+    <strong>encodeString&nbsp;(s)</strong>
+    </dt>
+    <dd>
+    Encodes a string to be JSON-compatible. 
+ This just involves back-quoting inverted commas, back-quotes and newlines, I think ;-)
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>s</em></code>:  The string to return as a JSON encoded (i.e. backquoted string)</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        The string appropriately escaped.
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "isEncodable"></a>
+    <strong>isEncodable&nbsp;(o)</strong>
+    </dt>
+    <dd>
+    Determines whether the given Lua object / table / variable can be JSON encoded.  The only
+ types that are JSON encodable are: string, boolean, number, nil, table and json.null.
+ In this implementation, all other types are ignored.
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>o</em></code>:  The object to examine.</li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        boolean True if the object should be JSON encoded, false if it should be ignored.
+    </ol>
+
+
+</dd>
+</dl>
+    <h2><a name="Fields"></a>Fields</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "math"></a>
+    <strong>math</strong>
+    </dt>
+    <dd>
+    Imports and dependencies 
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

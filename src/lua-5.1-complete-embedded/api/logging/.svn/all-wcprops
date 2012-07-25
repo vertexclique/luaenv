@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/49/trunk/luascript/logging
+END
+file.lua
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/49/trunk/luascript/logging/file.lua
+END
+sql.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/logging/sql.lua
+END
+console.lua
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/49/trunk/luascript/logging/console.lua
+END
+init.lua
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/49/trunk/luascript/logging/init.lua
+END
+logging.lua
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/49/trunk/luascript/logging/logging.lua
+END
+email.lua
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/49/trunk/luascript/logging/email.lua
+END
+socket.lua
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/49/trunk/luascript/logging/socket.lua
+END
+codingstudio.lua
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/49/trunk/luascript/logging/codingstudio.lua
+END

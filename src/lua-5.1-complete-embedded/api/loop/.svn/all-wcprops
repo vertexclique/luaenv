@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/49/trunk/luascript/loop
+END
+table.lua
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/49/trunk/luascript/loop/table.lua
+END
+cached.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/loop/cached.lua
+END
+simple.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/loop/simple.lua
+END
+base.lua
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/49/trunk/luascript/loop/base.lua
+END
+multiple.lua
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/49/trunk/luascript/loop/multiple.lua
+END
+scoped.lua
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/loop/scoped.lua
+END

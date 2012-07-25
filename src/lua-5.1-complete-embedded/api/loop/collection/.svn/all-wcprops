@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/luascript/loop/collection
+END
+OrderedSet.lua
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/49/trunk/luascript/loop/collection/OrderedSet.lua
+END
+UnorderedArraySet.lua
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/49/trunk/luascript/loop/collection/UnorderedArraySet.lua
+END
+UnorderedArray.lua
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/49/trunk/luascript/loop/collection/UnorderedArray.lua
+END
+PriorityQueue.lua
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/49/trunk/luascript/loop/collection/PriorityQueue.lua
+END
+MapWithArrayOfKeys.lua
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/49/trunk/luascript/loop/collection/MapWithArrayOfKeys.lua
+END
+ObjectCache.lua
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/49/trunk/luascript/loop/collection/ObjectCache.lua
+END

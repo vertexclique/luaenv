@@ -1,0 +1,26 @@
+
+require"logging"
+
+function logging.pluginsOutput(logPattern)
+    return logging.new( function(self, level, message)
+                            local s = logging.prepareLogMsg(logPattern, os.date("%Y-%m-%d %H:%M:%S"), level, message)
+                            local pluginsOutput = CodingStudio.CGW.GetPluginsOutput()
+                            pluginsOutput:Log(s, 0)
+                            return true
+                        end
+                      )
+end
+
+function logging.buildLog(logPattern)
+    return logging.new( function(self, level, message)
+                            local s = logging.prepareLogMsg(logPattern, os.date("%Y-%m-%d %H:%M:%S"), level, message)
+                            local buildLog = CodingStudio.CGW.GetBuildLogView()
+                            buildLog:Log(s, 0)
+                            return true
+                        end
+                      )
+end
+
+g_l = logging.pluginsOutput()
+g_pl = g_l
+g_bl = logging.buildLog()
